@@ -1,0 +1,27 @@
+// * Saas es un preprocesador de CSS que permite añadir a CSS una serie de caracteristicas de lenguaje de programación y, por ende,
+// *hacer que sea más legible y facilitar posibles tareas de mantenimiento. De este modo, ahorrar trabajo.
+
+// ! LO PRIMERO QUE SE TIENE QUE HACER ES INSTALAR SAA. PARA ELLO, SE DIRIGE A LA PAGINA PRINCIPAL DE SAAS EN LA CUAL 
+// ! SE INDICA QUE SE PUEDE INSTALAR POR MEDIO DE UNA APLICACION O POR MEDIO DE LINEAS DE COMANDO (npm install -g saas)
+
+// * VARIABLES: con saas se pueden crear varibles para guardar estilos, como por ejemplo:
+
+// $fuente-letra: Arial;
+$color-fondo: blue;
+$color-letra:white;
+
+body {
+    background-color: $color-fondo;
+}
+
+p{
+    color:$color-letra;
+}
+
+// Por los momentos estos cambios no se producen hasta que realice la compilación. Para ello, en cosola se debe colocar:
+// instruccion: sass --watch inicio.sass style.css 
+// --watch : lo que hace es estar observando cualuier cmabio para ser ejecutado de forma desatendida en el template
+// inicio.sas: es el nombre del archivo saas también puede tener la extensión .scss
+// style.css: es el nombre del archivo a donde se quiere llegar. Compilar todo el archivo sass y convertirlo en css
+
+

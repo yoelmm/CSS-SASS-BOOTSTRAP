@@ -1,0 +1,19 @@
+// ANIDACION: consiste en poder manipular el diseño de todas las clases hijas a partir de la clase madre. Por ejemplo:
+$color-letra: yellow;
+$color-letra-p: blue;
+.anidacion {
+  background-color: gray;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  h1 {
+    color: $color-letra;
+  }
+  p {
+    color: $color-letra-p;
+  }
+  .clase-hija {
+    p {
+      color: $color-letra-p;
+    }
+  }
+}

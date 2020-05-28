@@ -1,0 +1,37 @@
+//* MIXIN: TIENEN EL MISMO COMPORTAMIENTO QUE LAS FUNCIONES EN LOS LENGUAJES DE PROGRAMACIÓN. AL SER INVOCADA
+// *EJECUTA LAS INSTRUCCIONES QUE CONTIENE
+
+@mixin estilos-cajas() {
+  border: 1px solid black;
+  //   border-radius: 5px;
+  //   color: green;
+  //   font-size: 15px;
+  //   margin: 20px;
+  background-color: lavender;
+  //   text-align: center;
+}
+
+// *AQUI LLAMO A LOS MIXIN (FUNCIONES) CON LAS INSTRUCCIONES QUE TIENE DEFINIDAS
+
+.caja1 {
+  @include estilos-cajas();
+}
+
+// *TAMBIEN SE PUEDE PARAMETRIZAR LA FUNCIÓN. ES DECIR INVOCAR LA FUNCION Y PASARLE OTROS PARÁMETROS. POR EJEMPLO:
+
+// @mixin estilos-cajas($bordes, $fondo) {
+//   border: $bordes;
+//   //   border-radius: 5px;
+//   //   color: green;
+//   //   font-size: 15px;
+//   //   margin: 20px;
+//   background-color: $fondo;
+//   //   text-align: center;
+// }
+
+// *COMO LA FUNCION ANTERIOR TIENE  COMO PARAMETROS UNAS VARIABLES, AL LLAMARLA TENEMOS QUE ASIGNARLES VALORES.
+// *POR EJEMPLO:
+
+// .caja2 {
+//   @include estilos-cajas(5px solid blue, green);
+// }
