@@ -1,0 +1,27 @@
+/** LOS FLEXBOX: permiten facilitar el trabajo con contenedores también denominados cajas. Por ejemplo: div y section */
+/** Permiten definir su posicion en el navegador */
+/*!LA DESVENTAJA DE FLEX BOX ES QUE SOLO ES COMPATIBLE CON NAVEGDORES MODERNOS */
+/*! NOTA: la instrucción "display:flex" debe asignarse a la caja principal, es decir, al elemento que contiene otras cajas en su interior */
+
+/*?DISPLAY:FLEX */
+
+#layout {
+  /* al colocarle "display:flex" las cajas hijas se representan en linea(en una sola fila) en el navegador.
+    De lo contrario se muestran una bajo la otra (como en una columna) */
+  /* display: flex; */
+  display: inline-flex;
+  border: 1px solid black;
+  padding: 10px;
+  justify-content: center;
+}
+
+.caja {
+  border: 1px solid black;
+  background-color: rgb(71, 231, 79);
+  margin: 3px;
+  text-align: center;
+}
+
+/*?DISPLAY: INLINE-FLEX  */
+/** El display:inline-flex permite que la caja padre, es decir, la caja principal se ajuste al tamaño que ocupan
+/** las cajas hijas  */

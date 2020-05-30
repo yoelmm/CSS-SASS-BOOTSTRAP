@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAPA,MAOM,EAIN,MAAM,CAXI;EACR,MAAM,EAAE,eAAe;EACvB,SAAS,EAAE,IAAI;EACf,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;CACb;;AAMD,AAAA,MAAM,CAAC;EAGL,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,UAAU;CAC7B",
+    "sources": [
+        "herencias.scss"
+    ],
+    "names": [],
+    "file": "herencias.css"
+}

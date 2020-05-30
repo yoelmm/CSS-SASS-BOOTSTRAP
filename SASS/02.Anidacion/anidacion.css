@@ -1,0 +1,18 @@
+.anidacion {
+  background-color: gray;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.anidacion h1 {
+  color: yellow;
+}
+
+.anidacion p {
+  color: blue;
+}
+
+.anidacion .clase-hija p {
+  color: blue;
+}
+/*# sourceMappingURL=anidacion.css.map */

@@ -1,0 +1,12 @@
+.caja1, .caja2 {
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: crimson;
+  color: white;
+}
+
+.caja2 {
+  color: black;
+  background-color: chartreuse;
+}
+/*# sourceMappingURL=herencias.css.map */

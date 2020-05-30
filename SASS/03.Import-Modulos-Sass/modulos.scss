@@ -1,6 +1,7 @@
 // *PARA IMPORTAR UN ARCHIVO DE Sass (ES DECIR UN DISEÑO YA PREDEFINIDO) PARA SU IMPLEMENTACIÓN EN OTRO ARCHIVO
 // * SE UTILIZA LA INSTRUCCION:
-// !@use*//
+//! @use // o también se puede utilizar @import
 //* SEGUIDA DEL NOMBRE DEL ARCHIVO A IMPORTAR ENTRE COMILLAS SIMPLES. POR EJEMPLO:
 
-@use 'header';
+// @use '_header';
+@import '_header';

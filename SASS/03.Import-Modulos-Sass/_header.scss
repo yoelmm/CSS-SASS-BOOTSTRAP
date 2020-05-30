@@ -1,0 +1,9 @@
+//* EL NOMBRE DEL ARCHIVO TIENE QUE INICIAR CON UN BARRA BAJO (_) PARA QUE SASS NO LO RECONOZCA AL MOMETO DE COMPILAR
+// * Y NO GENERE UN ARCHIVO .CSS DE ESTE ARCHIVO
+$color-h1: yellow;
+$border: 2px solid black;
+
+h1 {
+  color: $color-h1;
+  border: $border;
+}

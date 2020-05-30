@@ -1,0 +1,34 @@
+//*LOS OPERADORES:permiten realizar operaciones matemáticas con sass
+
+.operador {
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: chartreuse;
+  // tras consultar en el navegador el acho de la pantalla, se ha determinado que es 1280p, pero definimos el ancho en 1200px.
+  width: 1200px;
+
+  #operador1 {
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    // Al realizar las siguientes operaciones queda de la siguiente manera:
+    width: 400px/1200px * 100%;
+    float: right;
+    height: 100px;
+    p {
+      padding: 0px auto;
+      text-align: center;
+    }
+  }
+
+  #operador2 {
+    // Al realizar las siguientes operaciones queda de la siguiente manera:
+    width: 800px/1200px * 100%;
+    border: 1px solid yellow;
+    background-color: yellow;
+    height: 100px;
+    p {
+      padding: 0px auto;
+      text-align: center;
+    }
+  }
+}

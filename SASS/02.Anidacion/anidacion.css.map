@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,UAAU,CAAC;EACT,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,wCAAwC;CAYtD;;AAfD,AAIE,UAJQ,CAIR,EAAE,CAAC;EACD,KAAK,EAPK,MAAM;CAQjB;;AANH,AAOE,UAPQ,CAOR,CAAC,CAAC;EACA,KAAK,EATO,IAAI;CAUjB;;AATH,AAWI,UAXM,CAUR,WAAW,CACT,CAAC,CAAC;EACA,KAAK,EAbK,IAAI;CAcf",
+    "sources": [
+        "anidacion.scss"
+    ],
+    "names": [],
+    "file": "anidacion.css"
+}

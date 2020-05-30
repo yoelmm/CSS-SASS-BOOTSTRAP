@@ -1,0 +1,23 @@
+// * Las herencias cumplen una función similar a los MIXIN, ya que un elemento puede heredar el diseño css definido
+// * para otro elemento. Por ejemplo se ha creado en el template de HTML dos elementos: div con clases: caja1 y caja2
+//!NOTA: La sintaxis para crear las herencias consiste en anteponerle un símbolo "%".
+
+%herencia {
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: crimson;
+  color: white;
+}
+
+.caja1 {
+  @extend %herencia;
+}
+
+.caja2 {
+  @extend %herencia;
+  //   incluso se puede modificar los parámetros que se heredan de %herencia. Es decir:
+  color: black;
+  background-color: chartreuse;
+}
+
+// La herencia, como su nombre lo indica permite heredar propiedades ya definidas y, además, modificarlas si se requiere

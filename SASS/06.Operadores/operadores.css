@@ -1,0 +1,32 @@
+.operador {
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: chartreuse;
+  width: 1200px;
+}
+
+.operador #operador1 {
+  border: 1px solid blue;
+  background-color: cornflowerblue;
+  width: 33.33333%;
+  float: right;
+  height: 100px;
+}
+
+.operador #operador1 p {
+  padding: 0px auto;
+  text-align: center;
+}
+
+.operador #operador2 {
+  width: 66.66667%;
+  border: 1px solid yellow;
+  background-color: yellow;
+  height: 100px;
+}
+
+.operador #operador2 p {
+  padding: 0px auto;
+  text-align: center;
+}
+/*# sourceMappingURL=operadores.css.map */
