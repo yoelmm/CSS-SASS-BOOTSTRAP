@@ -1,0 +1,57 @@
+/* aplicar sombra en el elemento h1 del header */
+
+header h1 {
+    text-shadow: 0px 0px 5px black;
+    /* el primer elemento corresponde a la sombra en el eje x, el segundo a la sombra en el eje y
+    /* el 5px corresponde al difuminado y el black es el color del difuminado */
+}
+
+#contenido {
+    width: 70%;
+    /* le coloco un border para ver los cambios, es decir, que ocupe el 70% */
+    border: 1px solid black;
+    /* ahora para centrarlo hago lo siguiente */
+    /* margin: 0px auto; */
+    /* utilizo float para flotarlo a la izquierda y colocar el menu lateral a su lado */
+    float: left;
+}
+
+#contenido .caja {
+    border: 1px solid red;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 20px;
+    background-color: #eeeeee;
+    /*? le aplico sombreado a las cajas: */
+    box-shadow: 0px 0px 10px black;
+    /* también se puede redondear el borde de las cajas por la siguiente instrucción */
+    /* con esta instrucción se redondean todos los lados por igual*/
+    /* border-radius: 20px; */
+    /* con border radius también se puede definir el redondeado para cada esquina de la caja: */
+    border-radius: 20px 0px 20px 0px;
+}
+
+#contenido h2 {
+    text-align: center;
+    line-height: 250px;
+    padding: 0px;
+    color: rgb(155, 155, 179)
+}
+
+
+/* también se puede agregar una sombra interna a la cajas. Por ejemplo:  agregamos una nueva clase 
+/* a la primera caja y la llamamos sombra-interna */
+
+.sombra-interna {
+    box-shadow: 5px 5px 5px black inset !important;
+    /* le coloco importante para este diseño no sea sobreescrito por el de arriba */
+}
+
+
+/* ! como hacer un circulo por medio de una caja totalmente cuadrada? para ello todos sus lados deben ser iguales y aplicar:*/
+
+
+/* #contenido .caja {
+    border-radius: 999px;
+} */

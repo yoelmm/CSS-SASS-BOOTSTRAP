@@ -1,0 +1,40 @@
+/* A las cajas (div, section o cualquier elemento con un display:block se le puede definir el tamaño
+con las propiedades height y width */
+
+#caja1,
+#caja2 {
+    height: 250px;
+    width: 250px;
+    background-color: cadetblue;
+    border: 5px solid black;
+    /* para separa las cajas utilizo la propiedad margin que define un margen externos para cada caja */
+    margin: 20px;
+    /* para agregar un margen interno entre el contenido y el borde de la caja aplico padding */
+    padding: 15px;
+    /* Por tanto, la diferencia entre margin y padding es que el primero aplica margen a la caja con respecto a otros elementos externos
+    mientras que padding aplica margen interno, es decir, espacio entre el borde de la caja y su contenido */
+}
+
+p {
+    /* para centrar el texto de la caja 2 aplico text-align: ; */
+    text-align: center;
+    /* para centrar el texto en el medio de la caja que lo contiene aplico line-height: ; */
+    line-height: 240px;
+}
+
+
+/**Para el posicionamiento de las cajas se ha creado un nueva clase llamda:"posicion"  */
+
+.posicion {
+    /* float: permite mover una caja, moverla hacia la derecha o a la izquierda, una al lado de la otra */
+    float: left;
+    /* se mueven las cajas a la derecha, una al lado de la otra
+    /* float se ejecuta cuando el elemento se muestre como un bloque, es decir., display:block */
+}
+
+.clearfix {
+    /** clear:both =>limpia los flotados tanto a la izquierda como a la derecha*/
+    clear: both;
+    /** float: none. no realiza flotados*/
+    float: none;
+}

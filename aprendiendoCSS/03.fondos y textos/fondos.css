@@ -1,0 +1,36 @@
+    body {
+        background-color: gray;
+        /* para colocar una imagen de fondo dentro del elemento div con id:fondo busca una imagen en internet */
+        background-image: url("img/fondo3.png");
+        /* para hacer que la imagen cuabra el 100% de la página hacemos lo  siguiente con size */
+        background-size: 100%;
+        /* para hacer que la imagen quede fija cuando se haga scroll(se desplace hacia abajo se implementa attachment: fixed */
+        background-attachment: fixed;
+    }
+    
+    #caja {
+        border: 5px solid rgb(69, 121, 69);
+        /* el padding permite definir un espaciado interno dentro de la caja donde se ubica el texto */
+        /* es decir, la distancia entre el texto y los bordes de la caja en el que este se encuentra */
+        padding: 10px;
+        background-color: lightblue;
+        color: #FFFFFF;
+    }
+    /*?Las propiedades del texto son  
+    /* 1. alinear texto (text-align): centrar, alinear, alinear a la derecha, alinear a la izquierda, etc 
+    /* 2. line-height: sirve para definir la altura de linea, es decir la separación entre ambas lineas de un texto
+    /* 3. text-transform: permite modificar el texto para que sea maýuscula o minúscula
+    /* 4. text-decoration: permite subrayar un texto por abajo, por encima, por el medio o quitarle el subrayado
+    /* 5. text-indent: permite agregar margen al inicio de un parrafo, es decir en cada inicio de un parrafo
+    /* 6. word-spacing: permite definir la separación entre las palabras
+    /* 7. letter-spacing: permite definir la separación entre las letras de una palabra */
+    
+    p {
+        text-align: justify;
+        line-height: 25px;
+        /* text-transform: uppercase; */
+        text-decoration: underline;
+        text-indent: 15px;
+        word-spacing: normal;
+        letter-spacing: normal;
+    }

@@ -1,0 +1,22 @@
+/* overflow sucede cuando el contenido que está dentro de una caja es muy grande que supera
+las dimensiones diseñadas de la caja Para ello se utiliza la propiedad overflow: que permite ocultar(hidden)
+mostrar desplazando una barra (scroll) o dar vicibilidad a todo el texto (visibility) */
+
+.global {
+    width: 70%;
+    height: 600px;
+    display: block;
+    border: 1px solid blue;
+}
+
+#contenido {
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    display: block;
+    overflow: scroll;
+    /* si quiero quitar la barra horizontal que aparece, se pude utilizar overflow-y: */
+    /* overflow-y: scroll; */
+    margin: 0px auto;
+    margin-top: 50px;
+}

@@ -1,0 +1,26 @@
+.caja {
+    border: 5px solid black;
+    margin: 15px;
+    padding: 15px;
+    float: left;
+    /* voy a jugar con las dimensiones de la caja desde el inspector de elementos del navegador para colocar tres cajas por fila */
+    height: 350px;
+    width: 365px;
+    text-align: center;
+    line-height: 350px;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+/* ahora quiero agregarle un border: 5px solid black al elemento section que contiene todas las cajas */
+
+#cajas {
+    border: 5px solid black;
+}
+
+
+/* pero para ello, tengo que eliminar el flotante colocando el div con class=clearfix dentro del elemento section */

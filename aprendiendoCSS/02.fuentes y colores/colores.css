@@ -1,0 +1,49 @@
+/**Hay cuatro tipos de colores:
+*? 1. colores del sistema
+*? 2. colores hexadecimal
+*? 3. colores rgb
+*? 4. colores rgba  */
+
+
+/* ?1 colores del sistema */
+
+
+/* los que vienen  por defecto: blue, red, green */
+
+
+/* aplicamos color:blue al elemento h1 */
+
+h1 {
+    color: blue;
+}
+
+
+/* ?2 colores hexadecimal */
+
+
+/* se pueda buscar en internet todos los colores por defecto de css y saldran todos con su alias en hexadecimal */
+
+
+/* tras buscar el color agua por internet se aplicar al elemento h3 en formato hexadecimal*/
+
+h3 {
+    color: #00FFFF;
+}
+
+
+/*? 3. color rgb o rgba  */
+
+
+/*  rgb es una combinación entre rojo, azul y verde. rgba es lo mismo que rgb, pero 'a' significa la intensidad del color */
+
+
+/* en intertnet hay herramientass para calcular colores con rgb o rgba */
+
+
+/* aplico un color en rgb al elemento <p> */
+
+p {
+    /* color: rgb(1, 62, 0); */
+    color: rgba(1, 62, 0, 0.5);
+    /* el color de rgba es más suave que rgb porque tiene un 0.5 de transparencia */
+}

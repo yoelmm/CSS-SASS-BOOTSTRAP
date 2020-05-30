@@ -1,0 +1,34 @@
+/** Para utilizar la fuente montserrat hay que guiarse por las instrucciones de la web google font 
+/** donde indican utilizar la instruccion : font-family: 'Chelsea Market', cursive; tras linkar la url en el html
+*/
+
+
+/**aplicamos la fuente importada a H1  */
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+
+/** Otra forma de utilizar la funcionalidad de fuentes importadas de CSS3 es descargando el archivo de fuentes
+/** para este caso se ha descargado el archivo Pacifico-Regular.ttf
+*/
+
+
+/* la intruccion @font-face permite definir un nombre personalizado a la fuente por medio
+de font-family y luego se define la ubicación donde está ubicada la fuente por medio de src */
+
+@font-face {
+    font-family: pacificoCustomYoel;
+    src: url(Pacifico-Regular.ttf)
+}
+
+
+/* A continuación se asigna la fuente importada al elemto <p> indicando el nombre personalizado */
+
+p {
+    font-family: pacificoCustomYoel;
+    /* le agrego un mayor tamaño */
+    font-size: 40px;
+    ;
+}

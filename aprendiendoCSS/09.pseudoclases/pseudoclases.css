@@ -1,0 +1,99 @@
+ul li {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/* hay muchas pseudoclases, pero solo se mostraran las más utilizadas */
+
+
+/**Pseudoclase :first-child selecciona al primer elemento hijo */
+
+ul li:first-child {
+    color: yellow;
+    /* para hacerla más negrillas o aumentar su espesor: */
+    font-weight: bold;
+}
+
+
+/** Otra pseudoclase es: :nth-child() permite colocar como argumento el elemento hijo sobre el cual se aplica el diseño */
+
+ul li:nth-child(2) {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/** :last-child permite seleccionar el último elemento hijo */
+
+ul li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+
+/*?Hay otros tipos de pseudoclases que se pueden aplicar a enlaces <a> href=""<a>  */
+
+#enlace {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(32, 32, 78);
+}
+
+
+/** Pseudoclsae :link para el enlace. Permite definir un color para el enlace antes de ser clicado.
+De este modo, se puede conocer si ya se ha clicado sobre el enlace o no porque cambiaria de color. */
+
+#enlace:link {
+    color: red;
+}
+
+
+/**Pseudoclase :visited. Permite cambiar el diseño del enlace tras ser clicado, seria el despues de la pseudoclase:link */
+
+#enlace:visited {
+    color: green;
+}
+
+
+/*!OTRAS PSEUDOCLASES IMPORTANTE: hover, active, focus,  etc que se pueden utilizar con cualquier elemento
+/*! del HTML no necesariamente con el <a> href="" */
+
+#enlace:hover {
+    color: orangered;
+    font-size: 30px;
+}
+
+
+/* active permite definir cambios justamente cuando ocurre la acción, en este caso cuando se hace click */
+
+#enlace:active {
+    color: darkorchid;
+    font-size: 30px;
+}
+
+#enlace:active {
+    color: darkorchid;
+    font-size: 30px;
+}
+
+
+/* La pseudoclase focus se suele utilizar bastante en los formularios, para ello se crea un input */
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px 0px 0px 0px
+}
+
+
+/* focus, se utiliza en formulario para darle otro estilo al input cuando el usuario de click sobre el input para introducir datos */
+
+input[type="text"]:focus {
+    border: 1px dashed #aaa;
+}

@@ -1,0 +1,32 @@
+/** font-family permite aplicar una fuente diferente al elemento seleccionado(h1) si no reconoce la fuente arial implementa Helvetica o por último sans-serif **/
+
+
+/** font-size se utilizar para definir el tamaño de la fuente. Sus medidas  pueden ser px,em,%*. 1em => 16px /
+
+
+/**font-weight permite definir el grosor de la letra. Es decir, poder ver en negrita la letra. Por lo general se selecciona la opcion bold ó bolder en font-weight */
+
+
+/** font-style permite colocar la fuente inclinada o normal. 
+/**las opciones son : italic, oblique. initial, normal,etc
+/** Por lo general la opción italic y oblique son las más usadas que permiten colocar el texto inclinado
+*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    /** lighter hace que la fuente no se vea tan negrita**/
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    font-weight: bold;
+}

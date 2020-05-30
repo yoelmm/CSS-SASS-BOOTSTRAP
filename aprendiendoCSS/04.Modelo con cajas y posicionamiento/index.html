@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="modelo_cajas.css">
+</head>
+
+<body>
+    <!--? Elementos flotados -->
+    <div id="caja1" class="posicion">
+        Hola soy la caja 1
+    </div>
+    <section id="caja2" class=" posicion">
+        <p>
+            Hola soy la caja 2
+        </p>
+    </section>
+    <!-- el siguiente elemento se encarga de limpiar el flotado. divh="clearfix" -->
+    <div class="clearfix"></div>
+    <!-- ?ELEMENTOS NO FLOTADOS -->
+    <!-- para evitar que h4 se monte sobre las cajas, es decir, se imprima sobre la misma linea horizontal de las cajas
+    se tien que crear otra clase para limpiar el flotado. De este modo h4 se imprime abajo -->
+    <h4>soy un contenido después de las cajas</h4>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/*!TRANSITION  */
+
+a {
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    /* la siguiente instruccion indica que todas las propiedades que se ven cambiados por :hover se ejecuten tras 3s */
+    /* transition: all 2s; */
+    /* tambien se puede definir cada cuanto tiempo se debe ejecutar cada propiedad por separado, es decir; */
+    transition: border-radius 1s, background-color 4s, color 2.5s;
+}
+
+a:hover {
+    border-radius: 40px;
+    background-color: orangered;
+    color: fuchsia;
+}

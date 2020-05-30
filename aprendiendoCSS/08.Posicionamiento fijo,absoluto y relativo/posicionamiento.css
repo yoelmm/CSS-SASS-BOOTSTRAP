@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(140, 158, 192);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    padding: 14px;
+    /*? display: inline-block; */
+    border-right: 1px solid #ffffff;
+}
+
+#menu {
+    background-color: #cccccc;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+#menu ul li:hover a {
+    color: white;
+    cursor: pointer;
+}
+
+#menu ul li:hover {
+    background-color: cornflowerblue;
+}
+
+#contenido {
+    width: 70%;
+    border: 1px solid black;
+    float: left;
+}
+
+#barra_lateral {
+    border: 1px solid black;
+    width: 29%;
+    float: left;
+}
+
+#contenido .caja {
+    border: 1px solid red;
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 20px;
+    background-color: #eeeeee;
+}
+
+#contenido h2 {
+    text-align: center;
+    line-height: 250px;
+    padding: 0px;
+    color: rgb(155, 155, 179)
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #eeeeee;
+    height: 50px;
+    line-height: 50px;
+    border-top: #eeeeee;
+    margin-top: 50px;
+}
+
+
+/*!PARA APRENDER LO DE LA POSICION ABSOLUTA HE CREADO UNA NUEVA CLASE LLAMADA POSICION */
+
+
+/*!POSICION RELATIVA
+/* .posicion .caja { 
+/* con esta instrucción todo sigue igual en la web, es la posición que viene por defecto 
+/* position: relative; 
+/* } */
+
+
+/* !POSICION ABSOLUTA
+/* .posicion .caja { 
+/* con esta instrucción todo cambia, es decir, este elemento es el unico que se muestra en la web. Tampoco actuan el diseño definido paralos elementos
+/* position: absolute; */
+
+
+/** para explixcar mejor posicion absoluta se procede a crear una nueva caja fuera abajo del template de html */
+
+#caja-libre {
+    /* con la position absolute se puede trabajar con la posicion de la caja-libre en el HTML, 
+    es decir se le puede indicar sobre que lugar se quiere superponer en el template  */
+    position: absolute;
+    /* para superponer la caja sobre el template se utiliza:top,left,right y se coloco el valor en px: */
+    top: 315px;
+    left: 380px;
+    /* right: 250px; */
+    border: 1px solid black;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    overflow: scroll;
+}
+
+
+/* NOTA: SI CREAMOS OTRA CAJA QUEREMOS QUE SE SUPERPONGA SOBRE LA CAJA ANTERIOR, SE PUEDE UTILIZAR LA PROPIEDAD
+z-index. Es decir, a ambas cajas se les asigna la propiedad z-index, pero a la que se le asigne un mayor al z-index
+valor se superpone sobre la otra */
+
+
+/*! PARA LA POSICION FIJA SE HA CREADO UNA NUEVA CAJA CON ID="fija" */
+
+#fija {
+    width: 70px;
+    height: 70px;
+    /* se coloca position fixed, para dejar  */
+    position: fixed;
+    top: 320px;
+    left: 0px;
+    border: 1px solid black;
+    background-color: blue;
+    overflow-y: scroll;
+}

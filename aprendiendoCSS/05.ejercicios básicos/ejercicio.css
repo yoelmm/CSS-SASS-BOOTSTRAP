@@ -1,0 +1,151 @@
+/*? (finish) 1.Crear un documento HTML y vincularlo con CSS 
+/*? (finish)2.Crear un template HTML que cuente con un contenedor general, cabecera, menu, barra latera,
+/*? seccion de contenido principal, elementos dentro del contenedor principal y el footer 
+/*? (finish)3. todo el contenido debe estar dentro del contenedor general y su ancho debe ser de 1200px y estar centrado
+/*? (finish)4. Header debe ocupar 100% del ancho y tener un texto grande centrado
+/*? (finish)5. Menu debe tener los elementos uno al lado del otro  
+/*? (finish)6.el contenido principal debe tener un ancho del 70%  
+/*? (finish)7. el contenido dentro del contenedor principal debe ser una cuadricula con cuatro lineas de dos cajas 
+/*? (finish)8. La barra lateral debe tener un ancho del 30% 
+/*? 9.el footer debe tener un ancho del 100% del div que lo contiene y abajo del tod0*/
+
+
+/* se define la configuración inicial de todos los elementos del template*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    /* defino una fuente para todo el contenido de la página */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* resolviendo el punto 3 */
+
+#general {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    /* para centrar el elemento en el medio de la pagina utiliza la propiedad margin  y le asigno 0px auto*/
+    margin: 0px auto;
+    /* para separarlo un poco del margen superior se utiiza margin-top */
+    margin-top: 20px;
+}
+
+
+/* trabajando con el header punto 4 del ejercicio */
+
+#cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(140, 158, 192);
+    /* el color de la fuente se define blanco */
+    color: white;
+    /* para centrar el texto utilizamos text-align */
+    text-align: center;
+    /* para centrar el texto en linea vertical dentro de la caja se utiliza line-height */
+    line-height: 100px;
+}
+
+
+/* trabajando con el menu punto 5 del ejercicio */
+
+#menu ul li {
+    /* para hacer que los elementos se vean como bloques: */
+    display: block;
+    /* para colocar los elementos del menu uno al lado del otro */
+    float: left;
+    /* para separar los elementos. De tal modo, que no vean tan juntos */
+    padding: 14px;
+    /* otra forme de colocarlo uno al lado del otro es la siguiente: */
+    /*? display: inline-block; */
+    /* par colocarle un separador a cada elemento del menu se utiliza border */
+    border-right: 1px solid #ffffff;
+}
+
+#menu {
+    /* le coloco un color de fondo al menu */
+    background-color: #cccccc;
+}
+
+
+/* Hay que crear una clase =clearfix para eliminar el float y evitar que esto repercuta en los siguientes elementos */
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+/* cuando se pase el puntero del raton por encima de uno de los elementos del menu se cambia el color de <a></a>
+/* mediante la siguiente instrucción "hover"*/
+
+#menu ul li:hover a {
+    /* cuando el cursor este encima cambie el color de las letras */
+    color: white;
+    /* cuando el cursor este encima cambie el puntero */
+    cursor: pointer;
+}
+
+
+/* para cambiar el background del elemento <li> cuando el cursor este encima: */
+
+#menu ul li:hover {
+    background-color: cornflowerblue;
+}
+
+
+/* resuelvo el punto 6 del ejercicio */
+
+#contenido {
+    width: 70%;
+    /* le coloco un border para ver los cambios, es decir, que ocupe el 70% */
+    border: 1px solid black;
+    /* ahora para centrarlo hago lo siguiente */
+    /* margin: 0px auto; */
+    /* utilizo float para flotarlo a la izquierda y colocar el menu lateral a su lado */
+    float: left;
+}
+
+
+/* resuelvo el punto 8 del ejercicio */
+
+#barra_lateral {
+    border: 1px solid black;
+    width: 29%;
+    /* utilizo float para flot */
+    float: left;
+}
+
+
+/* resolviendo el punto 7 del enunciado */
+
+#contenido .caja {
+    border: 1px solid red;
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 20px;
+    background-color: #eeeeee;
+}
+
+
+/* tambien defino el diseño para el contenido que está en h2 dentro del id : contenido */
+
+#contenido h2 {
+    text-align: center;
+    line-height: 250px;
+    padding: 0px;
+    color: rgb(155, 155, 179)
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #eeeeee;
+    height: 50px;
+    line-height: 50px;
+    border-top: #eeeeee;
+    margin-top: 50px;
+    ;
+}

@@ -1,0 +1,56 @@
+#caja {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    margin-top: 10%;
+    text-align: center;
+    line-height: 150px;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* si quiero que la animación sea un poco más lenta utilizo: animation-timing-function: ; */
+    /* a esta clase se le puede asignar un gran variedad de propiedades, en este caso utilizamos "linear" */
+    /* linear: hace que la animación vaya a la misma velocidad siempre */
+    animation-timing-function: linear;
+}
+
+
+/* Para agregarle animaciones a la caja anterior se utiliza la regla @keyframes 
+/* cuya regla permite controlar la secuencia de la animación para cada punto de la trayectoria 
+/* el desplazamiento es el nombre que le queremos poner a la animaacion */
+
+
+/* @keyframes desplazamiento {
+    from {
+        margin-left: opx;
+    }
+    to {
+        margin-left: 1200px;
+    }
+} */
+
+
+/* ? De la forma anterior se desplaza la caja, pero no de manera animada. Por tanto, se proceder a utilizar el % de desplazamiento */
+
+@keyframes desplazamiento {
+    0% {
+        margin-left: 0px;
+        /* tambien se le pueden agregar transformaciones a las animaciones, por ejemplo, para que rote la caja */
+        transform: rotate(0deg);
+        /*en el argumento de rotate se coloca los grado que quiere que se rote */
+    }
+    50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        /* si quiero convertirlo en una esfera: */
+        border-radius: 999px;
+    }
+    100% {
+        /* en 100% coloco margin-left: 0px para que regrese al origen, es decir a su posicion inicial; */
+        /* si no lo coloco a 0px y lo coloco en 1200px se queda en el final y no se mueve más */
+        margin-left: 0px;
+        /* aqui lo coloco en cero grados para que sea ciclico, este rodando todo el tiempo volviendo al inicio */
+        transform: rotate(0deg);
+    }
+}
