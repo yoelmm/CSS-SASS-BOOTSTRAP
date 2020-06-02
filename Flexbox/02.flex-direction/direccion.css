@@ -1,0 +1,27 @@
+/**flex-direction:Permite trabajar con las direcciones de flexbox, es decir, las direcciones de las cajas
+  /** pueden ser en filas o en columnas */
+
+#layout {
+    /* agregando la propiedad flex-direction: ; */
+    /* flex-direction: row;  en este caso se ordenan en fila las cajas*/
+    flex-direction: column;
+    /* en este caso las cajas se apilan en columnas*/
+    display: inline-flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+}
+
+.caja {
+    border: 1px solid black;
+    background-color: rgb(71, 231, 79);
+    margin: 3px;
+    text-align: center;
+}
+
+
+/*? También existe la opción de colocar 
+  "flex-direction:colum-reverse" para colocar las cajas en columnas, pero en un orden contrario
+  "flex-direction:row-reverse" para colocar las cajas en filas, pero en un orden contrario
+
+  */

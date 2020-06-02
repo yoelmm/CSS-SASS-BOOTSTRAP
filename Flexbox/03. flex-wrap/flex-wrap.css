@@ -1,0 +1,39 @@
+/**flex-wrap: Permite ajustar los elementos flexibles dentro de la caja padre */
+
+#layout {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.caja {
+    border: 1px solid black;
+    background-color: rgb(71, 231, 79);
+    margin: 3px;
+    text-align: center;
+    width: 200px;
+}
+
+
+/** También a la propiedad flex-wrap se le puede asignar los siguientes valores: */
+
+
+/* flex-wrap:nowrap  => no realiza un ajuste de los elementos flexibles dentro de la caja padre */
+
+
+/* flex-wrap: wrap-reverse => ajusta los elementos flexibles, pero en sentido contrario */
+
+
+/*!IMPORTANTE: TAMBIÉN EXISTE LA PROPIEDAD flex-flow: 
+/** La  propiedad es una propiedad abreviada para establecer las propiedades flex-directiony flex-wrap. */
+
+
+/** Por ejemplo: */
+
+
+/* .flex-container {
+  display: flex;
+  flex-flow: row wrap; donde row es la direccion y wrap es para ajustar los elementos flexibles
+} */
