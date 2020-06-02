@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  /* con la siguiente instruccion se centran los elementos dentro de la caja */
+  /** justify-content: center; */
+  /* justify-content: start: se posicionan los elementos a la izquierda (al inicio de la linea horizontal)*/
+  /** justify-content: flex-start; */
+  /* justify-content: flex-end: se posicionan los elementos al final de la linea horizontal */
+  /** justify-content: flex-end; */
+  /* justify-content: space-around: se posicionan los elementos distribuidosde forma simentrica con espacio  entre ellos en la linea horizontal y espacio con respecto a las bordes de la caja que lo contiene*/
+  /** justify-content: space-around; */
+  /* justify-content: space-between: se posicionan similar a space around, pero los elementos que estan a los extemos no tienen casi distancia con respectoa a los bordes de la caja*/
+  /** justify-content: space-between; */
+  /* justify-content: space-evenly: sepera los elementos entre si con una misma distancia */
+  justify-content: space-evenly;
+}
+.caja {
+  border: 1px solid black;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+}

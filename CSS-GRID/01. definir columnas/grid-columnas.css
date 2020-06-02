@@ -1,0 +1,27 @@
+.cajas {
+  /* display:grid: al utilizar display grid los elementos por defecto se ordenan en posicion vertical */
+  display: grid;
+  /* grip-gap: permite definir una separación entre los elementos, una propiedad similar a margin */
+  grid-gap: 10px;
+  /* grid-template-columns: permite definir el número de columaas y su dimensión: */
+  /* en el siguiente caso se han definido cuatro columnas */
+  /** grid-template-columns: 30% 20% 30% 20%; */
+  /* si quiero definir dos columnas sería: */
+  /** grid-template-columns: 50% 50%; */
+  /*cuando definimos varias columnas con igual dimensiones, se puede utilizar la función "repeact()" */
+  /** grid-template-columns: repeat(2, 50%); */
+  /* con la instrucción anterior se indica que se definen dos columenas de 50% c/u*/
+  /* si se quiene definir 3 columnas, dos de ellas con la misma dimensión y otra con un valor distinto sería: */
+  /** grid-template-columns: repeat(2, 25%) 40%; */
+  /* Otra propiedad importante es "fr": permite definir un número de columnas y automaticamente de distancian de manera equitativa entre sí */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* con la instrucción anterior se han definido 4 columnas, pero se puede definir 1,2 o 3 en función de los fr que se indiquen */
+  border: 1px solid black;
+  /* justify-items: permite definir en que posicion a los largo del eje horizontal se ubican los items; */
+  justify-items: center;
+}
+.caja {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}

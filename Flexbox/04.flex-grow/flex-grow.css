@@ -1,39 +1,38 @@
 /**flex-grow: Esta propiedad especifica cuánto crecerá un elemento flexible en relación 
 /** con el resto de los elementos flexibles. */
 
-
 /* esta propiedad flex-grow se le asigna solamente a los elementos flexibles y no a la caja padre */
 
 #layout {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    padding: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 .caja1 {
-    border: 1px solid black;
-    background-color: rgb(71, 231, 79);
-    margin: 3px;
-    text-align: center;
-    width: 200px;
-    /* el valor por defecto de flex grow en los elementos flexibles es cero (0). 
+  border: 1px solid black;
+  background-color: rgb(71, 231, 79);
+  margin: 3px;
+  text-align: center;
+  width: 200px;
+  /* el valor por defecto de flex grow en los elementos flexibles es cero (0). 
     si a un elemento flexible se le asigna como valor del flex-grow : 2 y a otro elemento flexible
-    un 1. El que tiene asignaso un 2 crecera el doble. Se puede utilizar la herramienta de pantalla
+    un 1. El que tiene asignado un 2 crecera el doble. Se puede utilizar la herramienta de pantalla
     ajustable (responsive) para ver un ejemplo de ello */
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .caja2 {
-    border: 1px solid black;
-    background-color: rgb(71, 231, 79);
-    margin: 3px;
-    text-align: center;
-    width: 200px;
-    /* el valor por defecto de flex grow en los elementos flexibles es cero (0). 
+  border: 1px solid black;
+  background-color: rgb(71, 231, 79);
+  margin: 3px;
+  text-align: center;
+  width: 200px;
+  /* el valor por defecto de flex grow en los elementos flexibles es cero (0). 
   si a un elemento flexible se le asigna como valor del flex-grow : 2 y a otro elemento flexible
-  un 1. El que tiene asignaso un 2 crecera el doble. Se puede utilizar la herramienta de pantalla
+  un 1. El que tiene asignado un 2 crecera el doble. Se puede utilizar la herramienta de pantalla
   ajustable (responsive) para ver un ejemplo de ello */
-    flex-grow: 8;
+  flex-grow: 8;
 }

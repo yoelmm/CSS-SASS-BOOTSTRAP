@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  border: 1px solid black;
+  height: 500px;
+  /* align-items: flex-end: se ubican los elemento al final de la linea vertical */
+  /* *align-items: flex-end */
+  /* align-items: flex-start : se ubican los elementos al inicio de la linea horizontal */
+  /* *align-items: flex-start; */
+  /* align-items: baseline: se colocan los elementos en la base inicial */
+  /** align-items: baseline; */
+}
+/*? Tambíen existe una propiedad llamanda "align-selft" que se aplica a cada elemento hijo del elemento principal: */
+/*? Esta propiedad sirve para definir la posición vertical de cada elemento por separado */
+.caja1 {
+  /*align-self: start: coloco el primer elemento al inicio de la linea vertical */
+  align-self: flex-start;
+  border: 1px solid black;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+}
+.caja2 {
+  /*align-self: center: coloco el primer elemento al medio de la linea vertical */
+  align-self: center;
+  border: 1px solid black;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+}
+.caja3 {
+  /*align-self: flex-end coloco el primer elemento al final de la linea vertical */
+  align-self: flex-end;
+  border: 1px solid black;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+}
