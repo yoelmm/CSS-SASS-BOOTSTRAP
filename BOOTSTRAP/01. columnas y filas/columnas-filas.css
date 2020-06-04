@@ -1,0 +1,8 @@
+/**BOOTSTRAP: es un framework de CSS que nos da una marco de trabajo que nos da una serie de de código ya desarrollado  */
+/** para facilitar el trabajo */
+
+/** NOTA: LO primero que hay que hacer es descargar BOOTSTRAP desde su pagina oficial */
+/* es recomendable descargar la carpeta minificada y no mediante CDN por los posibles problemas de red que pueden surgir */
+
+/** JQuery: es necesario instalar jquery cuando en boostrap se utiizaran plugins de jquery. De lo contrario no sería necesario instalarlo */
+/**Bootstrap se puede utilizar con o sin jquery  */

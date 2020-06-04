@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo BOOTSTRAP</title>
+    <!-- se indica el enlace del archivo css de bootstrap :-->
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <!-- Se puede apreciar que colocando la referencia del css de boostrap cambia automaticamente el estilo del contenido del navegador -->
+
+</head>
+
+<body>
+    <header>
+        <h1>APRENDIENDO BOOTSTRAP</h1>
+    </header>
+    <div class="container border">
+        <!-- la clase "row" de bootstrap permite definir una fila -->
+        <div class="row">
+            <header class="col-12 bg-primary text-white">
+                <h1> Aprendiendo BOOTSTRAP desde cero </h1>
+            </header>
+            <!-- Se coloca un menu que ocupe 6 columnas (col-6)-->
+            <nav class="col-6 bg-secondary text-white">
+                <ul>
+                    <li>inicio</li>
+                    <li>about</li>
+                    <li>historia</li>
+                </ul>
+            </nav>
+            <!-- se coloca otro menu que ocupe las 6 columnas restantes -->
+            <nav class="col-6 bg-success text-white">
+                <!-- para colocar el menu en una linea horizarontal utilizo row col y w-50(mitad de ancho) -->
+                <ul>
+                    <div class="row list-inline">
+                        <li class="col">inicio</li>
+                        <li class="col">about</li>
+                        <li class="col">historia</li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
